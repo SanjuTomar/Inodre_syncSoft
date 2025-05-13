@@ -18,11 +18,7 @@ const BlogSchema = new mongoose.Schema({
     type: String,
     required: [true, 'Please provide blog content'],
   },
-  author: {
-    type: mongoose.Types.ObjectId,
-    ref: 'User',
-    required: true,
-  },
+  
   createdAt: {
     type: Date,
     default: Date.now,
